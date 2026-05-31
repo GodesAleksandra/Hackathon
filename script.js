@@ -1,28 +1,90 @@
-// 1. Initialize variables
-    const img = document.getElementById('targetImage');
-    const resultText = document.getElementById('result');
-
-    // 2. Initialize the Image Classifier with the MobileNet model
-    const classifier = ml5.imageClassifier('MobileNet', modelReady);
-
-    // 3. Callback function when model is loaded
-    function modelReady() {
-      resultText.innerText = 'Model Loaded! Classifying...';
-      // Execute prediction on the image
-      classifier.classify(img, gotResult);
+const data_storage = [
+    {
+        id: 1,
+        name: 'Leanne Graham',
+        username: 'Bret',
+        email: 'Sincere@april.biz',
+        image: 'https://robohash.org/1?200x200'
+    },
+    {
+        id: 2,
+        name: 'Ervin Howell',
+        username: 'Antonette',
+        email: 'Shanna@melissa.tv',
+        image: 'https://robohash.org/2?200x200'
+    },
+    {
+        id: 3,
+        name: 'Clementine Bauch',
+        username: 'Samantha',
+        email: 'Nathan@yesenia.net',
+        image: 'https://robohash.org/3?200x200'
+    },
+    {
+        id: 4,
+        name: 'Patricia Lebsack',
+        username: 'Karianne',
+        email: 'Julianne.OConner@kory.org',
+        image: 'https://robohash.org/4?200x200'
+    },
+    {
+        id: 5,
+        name: 'Chelsey Dietrich',
+        username: 'Kamren',
+        email: 'Lucio_Hettinger@annie.ca',
+        image: 'https://robohash.org/5?200x200'
+    },
+    {
+        id: 6,
+        name: 'Mrs. Dennis Schulist',
+        username: 'Leopoldo_Corkery',
+        email: 'Karley_Dach@jasper.info',
+        image: 'https://robohash.org/6?200x200'
+    },
+    {
+        id: 7,
+        name: 'Kurtis Weissnat',
+        username: 'Elwyn.Skiles',
+        email: 'Telly.Hoeger@billy.biz',
+        image: 'https://robohash.org/7?200x200'
+    },
+    {
+        id: 8,
+        name: 'Nicholas Runolfsdottir V',
+        username: 'Maxime_Nienow',
+        email: 'Sherwood@rosamond.me',
+        image: 'https://robohash.org/8?200x200'
+    },
+    {
+        id: 9,
+        name: 'Glenna Reichert',
+        username: 'Delphine',
+        email: 'Chaim_McDermott@dana.io',
+        image:'https://robohash.org/9?200x200'
+    },
+    {
+        id: 10,
+        name: 'Clementina DuBuque',
+        username: 'Moriah.Stanton',
+        email: 'Rey.Padberg@karina.biz',
+        image:'https://robohash.org/10?200x200'
     }
+];
 
-    // 4. Callback function to process prediction data
-    function gotResult(error, results) {
-      if (error) {
-        console.error(error);
-        resultText.innerText = 'Error processing image.';
-        return;
-      }
-      
-      // Extract the highest confidence result label
-      const label = results[0].label;
-      const confidence = (results[0].confidence * 100).toFixed(2);
-      
-      resultText.innerText = `Prediction: ${label} (${confidence}% confidence)`;
-    }
+var loadFile = function (event) {
+    var image = document.getElementById("image");
+    image.src = URL.createObjectURL(event.target.files[0]);
+};
+const classifier = ml5.imageClassifier ("MobileNet", modelLoaded);
+
+// When the model is loaded
+function modelLoaded() {
+    console.log("Model Loaded!");
+}
+    
+function predict() {
+    classifier.predict(document.getElementById("image"), 
+        function (err, results) {
+            console.log(results);
+        });
+}

@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-  <script src="https://cloudflare.com"></script>
-  <script src="https://unpkg.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Classifier using ML5 js</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.7.1/dist/ml5.min.js"></script>
 </head>
 <body>
-    <img id="targetImage" src="cat.jpg" style="max-width: 200px;"></img>
-    <h3>Predictions:</h3>
-    <p id="result">Loading model...</p>
-
+    <center>
+        <img src="" alt="" id="image" width="400px" />
+        </br></br>
+        <input type="file" accept="image/*" 
+                onchange="loadFile(event)" 
+                name="image" id="file" />
+        <button onclick="predict()">Predict</button>
+    </center>
     <script src="script.js"></script>
 </body>
 </html>
