@@ -4,13 +4,17 @@ const pets = [
         name: 'Victoria',
         owner: 'Yudha Cuglad',
         breed: 'Scottish Fold',
+        pattern: 'tabby',
+        color: '',
         image: 'pexels-yudha-cuglad-938325-32421280.jpg'
     },
     {
         id: 2,
         name: 'Bella',
         owner: 'Sergey Syomin',
-        breed: '',
+        breed: 'Maine Coon',
+        pattern: 'tabby',
+        color: '',
         image: 'pexels-3096301-5780939.jpg'
     },
     {
@@ -18,6 +22,8 @@ const pets = [
         name: 'Lily',
         owner: 'Anna Kaharchuk',
         breed: 'Siamese',
+        pattern: 'colorpoint',
+        color: '',
         image: 'pexels-3885630-5780662.jpg'
     },
     {
@@ -25,6 +31,8 @@ const pets = [
         name: 'Luna',
         owner: 'Marina Shishkina',
         breed: 'Burmese',
+        pattern: 'solid',
+        color: 'black',
         image: 'pexels-140938577-10347798.jpg'
     },
     {
@@ -32,146 +40,186 @@ const pets = [
         name: 'Chloe',
         owner: 'Kamren',
         breed: 'Ragdoll',
+        pattern: 'calico',
+        color: '',
         image: 'pexels-724211268-34479025.jpg'
     },
     {
         id: 6,
         name: 'Lucy',
         owner: 'Leopoldo_Corkery',
-        breed: '',
+        breed: 'Persian',
         pattern: 'tabby',
-        color: 'orange',
+        color: 'orange (red)',
         image: 'pexels-abi-ikhwanurridlo-3385258-5380197.jpg'
     },
     {
         id: 7,
         name: 'Alice',
         owner: 'Elwyn.Skiles',
-        breed: '',
+        breed: 'Siamese',
+        pattern: 'mink',
+        color: '',
         image: 'pexels-anilkarakaya-14017008.jpg'
     },
     {
         id: 8,
         name: 'Sophie',
         owner: 'Maxime_Nienow',
-        breed: '',
+        breed: 'Devon Rex',
+        pattern: 'solid',
+        color: '',
         image: 'pexels-chen-edison-2155188199-37390945.jpg'
     },
     {
         id: 9,
         name: 'Duchess',
         owner: 'Claudia Schmalz',
-        breed: '',
+        breed: 'Persian',
+        pattern: 'chinchilla',
+        color: '',
         image:'pexels-claudia-schmalz-3928374-14803378.jpg'
     },
     {
         id: 10,
         name: 'Penelope',
         owner: 'Dagmara Dombrovska',
-        breed: '',
+        breed: 'Siamese',
+        pattern: 'colorpoint',
+        color: '',
         image:'pexels-dagmara-dombrovska-22732579-7696348.jpg'
     },
     {
         id: 11,
         name: 'Garfield',
         owner: 'Diana King',
-        breed: '',
+        breed: 'No breed specified',
+        pattern: 'tabby',
+        color: '',
         image:'pexels-fox-58267-37385907.jpg'
     },
     {
         id: 12,
         name: 'Felix',
         owner: 'Helena Jankovicova',
-        breed: '',
+        breed: 'Bengal',
+        pattern: 'tabby',
+        color: '',
         image:'pexels-helen1-20211114.jpg'
     },
     {
         id: 13,
         name: 'Bucky',
         owner: 'Jerry',
-        breed: '',
+        breed: 'Bengal',
+        pattern: 'tabby',
+        color: 'brown (chocolate)',
         image:'pexels-jerry-2334361-16761418.jpg'
     },
     {
         id: 14,
         name: 'Thomas',
         owner: 'Aleks Kovacevic',
-        breed: '',
+        breed: 'Sphynx',
+        pattern: 'solid',
+        color: '',
         image:'pexels-koolshooters-7680670.jpg'
     },
     {
         id: 15,
         name: 'Oliver',
         owner: 'Nika George',
-        breed: '',
+        breed: 'Sphynx',
+        pattern: 'solid',
+        color: '',
         image:'pexels-koolshooters-7680672.jpg'
     },
     {
         id: 16,
         name: 'Max',
         owner: 'leonardo De Oliveira',
-        breed: '',
+        breed: 'Himalayan',
+        pattern: 'colorpoint',
+        color: '',
         image:'pexels-leonardo-de-oliveira-872270-2499282.jpg'
     },
     {
         id: 17,
         name: 'Charlie',
         owner: 'Natalia Sevruk',
-        breed: '',
+        breed: 'Siamese',
+        pattern: 'colorpoint',
+        color: '',
         image:'pexels-natalia-sevruk-636238602-33202410.jpg'
     },
     {
         id: 18,
         name: 'Leo',
         owner: 'Nicohonasan',
-        breed: '',
+        breed: 'Persian',
+        pattern: 'tuxedo',
+        color: '',
         image:'pexels-nicohonasan-37671114.jpg'
     },
     {
         id: 19,
         name: 'Milo',
         owner: 'Nika Benedictova',
-        breed: '',
+        breed: 'Bengal',
+        pattern: 'tabby',
+        color: '',
         image:'pexels-nika-benedictova-24565203-15802496.jpg'
     },
     {
         id: 20,
         name: 'Winston',
         owner: 'Natalya Fox',
-        breed: '',
+        breed: 'Scottish Fold',
+        pattern: 'tabby',
+        color: 'Blue (Grey)',
         image:'pexels-pet-foto-644780685-17685206.jpg'
     },
     {
         id: 21,
         name: 'Arthur',
         owner: 'John Stanton',
-        breed: '',
+        breed: 'Sphynx',
+        pattern: 'colorpoint',
+        color: '',
         image:'pexels-pexels-user-399617868-17191487.jpg'
     },
     {
         id: 22,
         name: 'Henry',
         owner: 'Rain Lu',
-        breed: '',
+        breed: 'Ragdoll',
+        pattern: 'calico',
+        color: '',
         image:'pexels-rain-lu-452606747-29903738.jpg'
     },
     {
         id: 23,
         name: 'Baxter',
         owner: 'Anna Black',
-        breed: '',
+        breed: 'Persian',
+        pattern: 'cap-and-saddle',
+        color: '',
         image:'pexels-shootsaga-30689866.jpg'
     },
     {
         id: 24,
         name: 'Duke',
         owner: 'Sofie Witters',
-        breed: '',
+        breed: 'Scottish Fold',
+        pattern: 'smoke',
+        color: 'blue (grey)',
         image:'pexels-sofie-witters-248577-16579458.jpg'
     }
 ];
 
 let classifier;
+let patterns = ['no pattern specified', 'solid', 'bicolor', 'tabby', 'tortoiseshell', 'calico', 'colorpoint', 'mink', 'sepia', 'smoke', 'shaded', 'chinchilla'];
+let colors = ['no color specified', 'white', 'black', 'blue (grey)', 'brown (chocolate)', 'silver', 'golden', 'cream', 'fawn', 'isabella', 'seal', 'sable (dark brown)', 'champagne (warm beige)', 'platinum (pale grey-lavender)', 'lilac', 'cinnamon', 'orange (red)'];
 
 async function init() {
     // 1. Await the classifier model loading
@@ -219,13 +267,31 @@ init();
 
 const pets_container = document.getElementById("pets-container");
 
-const input = document.getElementById("search");
-input.addEventListener("input", (event) => {
+const patternSelect = document.getElementById("pattern");
+const colorSelect = document.getElementById("color");
+const breedSelect = document.getElementById("breed");
+
+patternSelect.addEventListener("change", filterData);
+colorSelect.addEventListener("change", filterData);
+breedSelect.addEventListener("change", filterData);
+
+function filterData() {
     document.querySelectorAll('.pet').forEach(el => el.remove());
-    let petsFiltArr = pets.filter(pet => pet.name.toLowerCase().includes(event.target.value.toLowerCase()));
-    //console.log(petsFiltArr);
-    displayPets(petsFiltArr);
-});
+    
+    const selectedPattern = patternSelect.value;
+    const selectedColor = colorSelect.value;
+    const selectedBreed = breedSelect.value;
+
+    const petsFiltArr = pets.filter(pet => {
+    const matchesPattern = selectedPattern === "no pattern specified" || pet.pattern === selectedPattern;
+    const matchesColor = selectedColor === "no color specified" || pet.color === selectedColor;
+    const matchesBreed = selectedBreed === "no_breed" || pet.breed === selectedBreed;
+
+    return matchesPattern && matchesColor && matchesBreed;
+  });
+
+  displayPets(petsFiltArr);
+}
 
 function createPet(id) {
     let pet = document.createElement("div");
@@ -257,6 +323,8 @@ function displayPets(petsArr = pets) {
         img.classList.add('rounded-border');
         div_pet.appendChild(img);
         createTextElement(pet.name, pet.id, "20px", "bold");
+        createTextElement(pet.breed, pet.id, "20px", "normal");
+        createTextElement(pet.pattern + " " + pet.color, pet.id, "20px", "normal");
         createTextElement(pet.owner, pet.id, "16px", "normal");     });
 }
 
@@ -281,18 +349,40 @@ window.onload = async (e) => {
         } else {
             let div_pet, img;
             let pets = await response.json();
+            const select = document.getElementById('breed');
             for (const pet of pets) {
-                const select = document.getElementById('breed');
                 const opt = document.createElement('option');
-                opt.value = pet.id;
+                opt.value = pet.name;
                 opt.textContent = pet.name;
                 select.appendChild(opt);
-                //console.log(pet.name);
             }
+                const opt = document.createElement('option');
+                opt.value = 'no_breed';
+                opt.textContent = 'No breed specified';
+                opt.defaultSelected = true;
+                select.appendChild(opt);
+
         }
     } catch (err) {
         console.log("In the catch ", err);
     }
 }
 
+function displayOptionsFilt() {
+    const select_pattern = document.getElementById('pattern');
+    for (const pattern of patterns) {
+        const opt = document.createElement('option');
+        opt.textContent = pattern;
+        select_pattern.appendChild(opt);
+    }
+    
+    const select_color = document.getElementById('color');
+    for (const color of colors) {
+        const opt = document.createElement('option');
+        opt.textContent = color;
+        select_color.appendChild(opt);
+    }
+}
+
+displayOptionsFilt();
 displayPets(pets);

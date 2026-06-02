@@ -11,7 +11,14 @@
 <body>    
     <div id="header">
         <h1>Search for Lost Pets</h1>
-        <input type="text" placeholder="search color" id="search">
+    </div>
+    <div id="pattern-container">
+        <h2>Search by Pattern:</h2>
+        <select name="pattern" id="pattern"></select>
+    </div>
+    <div id="color-container">
+        <h2>Search by Color:</h2>
+        <select name="color" id="color"></select>
     </div>
     <div id="breed-container">
         <h2>Search by Breed:</h2>
@@ -23,7 +30,8 @@
         <img id="inputImage" src="" alt="Image will appear here" width="300" style="display:none;">
         <p id="result"></p>
     </div>
-    <div id="pets-container"></div>
+    <div id="pets-container">
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
