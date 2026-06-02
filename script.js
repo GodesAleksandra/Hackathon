@@ -3,144 +3,170 @@ const pets = [
         id: 1,
         name: 'Victoria',
         owner: 'Yudha Cuglad',
+        breed: 'Scottish Fold',
         image: 'pexels-yudha-cuglad-938325-32421280.jpg'
     },
     {
         id: 2,
         name: 'Bella',
         owner: 'Sergey Syomin',
+        breed: '',
         image: 'pexels-3096301-5780939.jpg'
     },
     {
         id: 3,
         name: 'Lily',
         owner: 'Anna Kaharchuk',
+        breed: 'Siamese',
         image: 'pexels-3885630-5780662.jpg'
     },
     {
         id: 4,
         name: 'Luna',
         owner: 'Marina Shishkina',
+        breed: 'Burmese',
         image: 'pexels-140938577-10347798.jpg'
     },
     {
         id: 5,
         name: 'Chloe',
         owner: 'Kamren',
+        breed: 'Ragdoll',
         image: 'pexels-724211268-34479025.jpg'
     },
     {
         id: 6,
         name: 'Lucy',
         owner: 'Leopoldo_Corkery',
+        breed: '',
+        pattern: 'tabby',
+        color: 'orange',
         image: 'pexels-abi-ikhwanurridlo-3385258-5380197.jpg'
     },
     {
         id: 7,
         name: 'Alice',
         owner: 'Elwyn.Skiles',
+        breed: '',
         image: 'pexels-anilkarakaya-14017008.jpg'
     },
     {
         id: 8,
         name: 'Sophie',
         owner: 'Maxime_Nienow',
+        breed: '',
         image: 'pexels-chen-edison-2155188199-37390945.jpg'
     },
     {
         id: 9,
         name: 'Duchess',
         owner: 'Claudia Schmalz',
+        breed: '',
         image:'pexels-claudia-schmalz-3928374-14803378.jpg'
     },
     {
         id: 10,
         name: 'Penelope',
         owner: 'Dagmara Dombrovska',
+        breed: '',
         image:'pexels-dagmara-dombrovska-22732579-7696348.jpg'
     },
     {
         id: 11,
         name: 'Garfield',
         owner: 'Diana King',
+        breed: '',
         image:'pexels-fox-58267-37385907.jpg'
     },
     {
         id: 12,
         name: 'Felix',
         owner: 'Helena Jankovicova',
+        breed: '',
         image:'pexels-helen1-20211114.jpg'
     },
     {
         id: 13,
         name: 'Bucky',
         owner: 'Jerry',
+        breed: '',
         image:'pexels-jerry-2334361-16761418.jpg'
     },
     {
         id: 14,
         name: 'Thomas',
         owner: 'Aleks Kovacevic',
+        breed: '',
         image:'pexels-koolshooters-7680670.jpg'
     },
     {
         id: 15,
         name: 'Oliver',
         owner: 'Nika George',
+        breed: '',
         image:'pexels-koolshooters-7680672.jpg'
     },
     {
         id: 16,
         name: 'Max',
         owner: 'leonardo De Oliveira',
+        breed: '',
         image:'pexels-leonardo-de-oliveira-872270-2499282.jpg'
     },
     {
         id: 17,
         name: 'Charlie',
         owner: 'Natalia Sevruk',
+        breed: '',
         image:'pexels-natalia-sevruk-636238602-33202410.jpg'
     },
     {
         id: 18,
         name: 'Leo',
         owner: 'Nicohonasan',
+        breed: '',
         image:'pexels-nicohonasan-37671114.jpg'
     },
     {
         id: 19,
         name: 'Milo',
         owner: 'Nika Benedictova',
+        breed: '',
         image:'pexels-nika-benedictova-24565203-15802496.jpg'
     },
     {
         id: 20,
         name: 'Winston',
         owner: 'Natalya Fox',
+        breed: '',
         image:'pexels-pet-foto-644780685-17685206.jpg'
     },
     {
         id: 21,
         name: 'Arthur',
         owner: 'John Stanton',
+        breed: '',
         image:'pexels-pexels-user-399617868-17191487.jpg'
     },
     {
         id: 22,
         name: 'Henry',
         owner: 'Rain Lu',
+        breed: '',
         image:'pexels-rain-lu-452606747-29903738.jpg'
     },
     {
         id: 23,
         name: 'Baxter',
         owner: 'Anna Black',
+        breed: '',
         image:'pexels-shootsaga-30689866.jpg'
     },
     {
         id: 24,
         name: 'Duke',
         owner: 'Sofie Witters',
+        breed: '',
         image:'pexels-sofie-witters-248577-16579458.jpg'
     }
 ];
@@ -205,8 +231,9 @@ function createPet(id) {
     let pet = document.createElement("div");
     pet.classList.add("pet");
     pet.setAttribute('id', id);
-    pet.style.backgroundImage = "url('card-pattern.png')";
-    pet.style.backgroundColor = "#2ED1CC";
+    //pet.style.backgroundImage = "url('pet_pattern.jpg')";
+    pet.style.backgroundColor = "rgba(16, 186, 209, 0.6)";
+    pet.style.backgroundSize = "100% auto"; 
     pets_container.appendChild(pet);
 }
 
@@ -233,4 +260,39 @@ function displayPets(petsArr = pets) {
         createTextElement(pet.owner, pet.id, "16px", "normal");     });
 }
 
-displayPets();
+window.onload = async (e) => {
+    try {
+        e.preventDefault();
+        const headers = new Headers({
+            "Content-Type": "application/json",
+            "x-api-key": "live_zLAE9dSElFBdN4qmC0wh8w56zbTwxOpN0eCvMn95xbSF8dfmiWFYXLz0TyZkV1s8"
+        });
+
+        var requestOptions = {
+            method: 'GET',
+            headers: headers,
+            redirect: 'follow'
+        };
+
+        let catsUrl = 'https://api.thecatapi.com/v1/breeds';
+        const response = await fetch(catsUrl, requestOptions);
+        if (!response.ok) {
+            throw new Error("Something went wrong");
+        } else {
+            let div_pet, img;
+            let pets = await response.json();
+            for (const pet of pets) {
+                const select = document.getElementById('breed');
+                const opt = document.createElement('option');
+                opt.value = pet.id;
+                opt.textContent = pet.name;
+                select.appendChild(opt);
+                //console.log(pet.name);
+            }
+        }
+    } catch (err) {
+        console.log("In the catch ", err);
+    }
+}
+
+displayPets(pets);
