@@ -1,8 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-//import ml5 from 'ml5';
-// Replace: import express from 'express';
-const ml5 = require('ml5');
 const pets = [
     {
         id: 1,
@@ -236,7 +232,7 @@ async function classifyImage(imageElement) {
             `Prediction: ${label} (${confidence}% confidence)`;
         document.querySelectorAll('.pet').forEach(el => el.remove());
         const petsFiltArr = pets.filter(pet => {
-            const filtLabel = label.toLowerCase().replace('cat', '').replaceAll(' ', '').split(',');
+            const filtLabel = label.toLowerCase().replace('cat', '').replace(' ', '').split(',');
             const matchesPrediction = filtLabel.includes(pet.breed.toLowerCase()) || filtLabel.includes(pet.pattern.toLowerCase());
             return matchesPrediction;
         });
@@ -373,4 +369,3 @@ function displayOptionsFilt() {
 }
 displayOptionsFilt();
 displayPets(pets);
-//# sourceMappingURL=script.js.map

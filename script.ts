@@ -1,8 +1,5 @@
-//import ml5 from 'ml5';
-// Replace: import express from 'express';
-const ml5 = require('ml5');
+declare const ml5: any;
 
-// Define explicit interfaces for your model's output
 interface ClassificationResult {
   label: string;
   confidence: number;
@@ -255,7 +252,7 @@ async function classifyImage(imageElement : HTMLImageElement) {
         document.querySelectorAll('.pet').forEach(el => el.remove());    
     
         const petsFiltArr = pets.filter(pet => {
-            const filtLabel: string[] = label.toLowerCase().replace('cat','').replaceAll(' ', '').split(',');
+            const filtLabel: string[] = label.toLowerCase().replace('cat','').replace(' ', '').split(',');
             const matchesPrediction: boolean = filtLabel.includes(pet.breed.toLowerCase()) || filtLabel.includes(pet.pattern.toLowerCase());
             
             return matchesPrediction;
