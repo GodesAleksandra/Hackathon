@@ -1,3 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+//import ml5 from 'ml5';
+// Replace: import express from 'express';
+const ml5 = require('ml5');
 const pets = [
     {
         id: 1,
@@ -5,7 +10,7 @@ const pets = [
         owner: 'Yudha Cuglad',
         breed: 'Scottish Fold',
         pattern: 'tabby',
-        color: ['white','brown (chocolate)'],
+        color: ['white', 'brown (chocolate)'],
         image: 'img/pexels-yudha-cuglad-938325-32421280.jpg'
     },
     {
@@ -14,7 +19,7 @@ const pets = [
         owner: 'Sergey Syomin',
         breed: 'Maine Coon',
         pattern: 'tabby',
-        color: ['blue (grey)','cream'],
+        color: ['blue (grey)', 'cream'],
         image: 'img/pexels-3096301-5780939.jpg'
     },
     {
@@ -41,7 +46,7 @@ const pets = [
         owner: 'Kamren',
         breed: 'Ragdoll',
         pattern: 'calico',
-        color: ['white','brown (chocolate)'],
+        color: ['white', 'brown (chocolate)'],
         image: 'img/pexels-724211268-34479025.jpg'
     },
     {
@@ -78,7 +83,7 @@ const pets = [
         breed: 'Persian',
         pattern: 'chinchilla',
         color: ['white'],
-        image:'img/pexels-claudia-schmalz-3928374-14803378.jpg'
+        image: 'img/pexels-claudia-schmalz-3928374-14803378.jpg'
     },
     {
         id: 10,
@@ -87,7 +92,7 @@ const pets = [
         breed: 'Siamese',
         pattern: 'colorpoint',
         color: ['seal'],
-        image:'img/pexels-dagmara-dombrovska-22732579-7696348.jpg'
+        image: 'img/pexels-dagmara-dombrovska-22732579-7696348.jpg'
     },
     {
         id: 11,
@@ -96,7 +101,7 @@ const pets = [
         breed: 'No breed specified',
         pattern: 'tabby',
         color: ['brown (chocolate)'],
-        image:'img/pexels-fox-58267-37385907.jpg'
+        image: 'img/pexels-fox-58267-37385907.jpg'
     },
     {
         id: 12,
@@ -105,7 +110,7 @@ const pets = [
         breed: 'Bengal',
         pattern: 'tabby',
         color: ['silver'],
-        image:'img/pexels-helen1-20211114.jpg'
+        image: 'img/pexels-helen1-20211114.jpg'
     },
     {
         id: 13,
@@ -114,7 +119,7 @@ const pets = [
         breed: 'Bengal',
         pattern: 'tabby',
         color: ['brown (chocolate)'],
-        image:'img/pexels-jerry-2334361-16761418.jpg'
+        image: 'img/pexels-jerry-2334361-16761418.jpg'
     },
     {
         id: 14,
@@ -123,7 +128,7 @@ const pets = [
         breed: 'Sphynx',
         pattern: 'solid',
         color: ['blue (grey)'],
-        image:'img/pexels-koolshooters-7680670.jpg'
+        image: 'img/pexels-koolshooters-7680670.jpg'
     },
     {
         id: 15,
@@ -132,7 +137,7 @@ const pets = [
         breed: 'Sphynx',
         pattern: 'solid',
         color: ['blue (grey)'],
-        image:'img/pexels-koolshooters-7680672.jpg'
+        image: 'img/pexels-koolshooters-7680672.jpg'
     },
     {
         id: 16,
@@ -141,7 +146,7 @@ const pets = [
         breed: 'Himalayan',
         pattern: 'colorpoint',
         color: ['seal'],
-        image:'img/pexels-leonardo-de-oliveira-872270-2499282.jpg'
+        image: 'img/pexels-leonardo-de-oliveira-872270-2499282.jpg'
     },
     {
         id: 17,
@@ -150,7 +155,7 @@ const pets = [
         breed: 'Siamese',
         pattern: 'colorpoint',
         color: ['seal'],
-        image:'img/pexels-natalia-sevruk-636238602-33202410.jpg'
+        image: 'img/pexels-natalia-sevruk-636238602-33202410.jpg'
     },
     {
         id: 18,
@@ -159,7 +164,7 @@ const pets = [
         breed: 'Persian',
         pattern: 'tuxedo',
         color: ['orange (red)', 'white'],
-        image:'img/pexels-nicohonasan-37671114.jpg'
+        image: 'img/pexels-nicohonasan-37671114.jpg'
     },
     {
         id: 19,
@@ -168,7 +173,7 @@ const pets = [
         breed: 'Bengal',
         pattern: 'tabby',
         color: ['brown (chocolate)'],
-        image:'img/pexels-nika-benedictova-24565203-15802496.jpg'
+        image: 'img/pexels-nika-benedictova-24565203-15802496.jpg'
     },
     {
         id: 20,
@@ -177,7 +182,7 @@ const pets = [
         breed: 'Scottish Fold',
         pattern: 'tabby',
         color: ['blue (grey)'],
-        image:'img/pexels-pet-foto-644780685-17685206.jpg'
+        image: 'img/pexels-pet-foto-644780685-17685206.jpg'
     },
     {
         id: 21,
@@ -186,7 +191,7 @@ const pets = [
         breed: 'Sphynx',
         pattern: 'colorpoint',
         color: ['seal'],
-        image:'img/pexels-pexels-user-399617868-17191487.jpg'
+        image: 'img/pexels-pexels-user-399617868-17191487.jpg'
     },
     {
         id: 22,
@@ -194,8 +199,8 @@ const pets = [
         owner: 'Rain Lu',
         breed: 'Ragdoll',
         pattern: 'calico',
-        color: ['white','brown (chocolate)'],
-        image:'img/pexels-rain-lu-452606747-29903738.jpg'
+        color: ['white', 'brown (chocolate)'],
+        image: 'img/pexels-rain-lu-452606747-29903738.jpg'
     },
     {
         id: 23,
@@ -204,7 +209,7 @@ const pets = [
         breed: 'Persian',
         pattern: 'cap-and-saddle',
         color: ['white'],
-        image:'img/pexels-shootsaga-30689866.jpg'
+        image: 'img/pexels-shootsaga-30689866.jpg'
     },
     {
         id: 24,
@@ -213,121 +218,96 @@ const pets = [
         breed: 'Scottish Fold',
         pattern: 'smoke',
         color: ['blue (grey)'],
-        image:'img/pexels-sofie-witters-248577-16579458.jpg'
+        image: 'img/pexels-sofie-witters-248577-16579458.jpg'
     }
 ];
-
 let classifier;
 let patterns = ['no pattern specified', 'solid', 'bicolor', 'tabby', 'tortoiseshell', 'calico', 'colorpoint', 'mink', 'sepia', 'smoke', 'shaded', 'chinchilla'];
 let colors = ['no color specified', 'white', 'black', 'blue (grey)', 'brown (chocolate)', 'silver', 'golden', 'cream', 'fawn', 'isabella', 'seal', 'sable (dark brown)', 'champagne (warm beige)', 'platinum (pale grey-lavender)', 'lilac', 'cinnamon', 'orange (red)'];
-
 async function init() {
-    // 1. Await the classifier model loading
     classifier = await ml5.imageClassifier('MobileNet');
-    //document.getElementById('result').innerText = "Model loaded! Please upload an image.";
 }
-
 async function classifyImage(imageElement) {
     try {
-        // 2. Await classification results
         const results = await classifier.classify(imageElement);
-        
-        // 3. Display the top result
         const label = results[0].label;
         const confidence = (results[0].confidence * 100).toFixed(2);
-        document.getElementById('result').innerText = 
+        document.getElementById('result').innerText =
             `Prediction: ${label} (${confidence}% confidence)`;
-        
-        document.querySelectorAll('.pet').forEach(el => el.remove());    
-    
+        document.querySelectorAll('.pet').forEach(el => el.remove());
         const petsFiltArr = pets.filter(pet => {
-            const filtLabel = label.toLowerCase().replace('cat','').replaceAll(' ', '').split(',');
+            const filtLabel = label.toLowerCase().replace('cat', '').replaceAll(' ', '').split(',');
             const matchesPrediction = filtLabel.includes(pet.breed.toLowerCase()) || filtLabel.includes(pet.pattern.toLowerCase());
-            
             return matchesPrediction;
         });
-
         displayPets(petsFiltArr);
-    } catch (error) {
+    }
+    catch (error) {
         console.error(error);
         document.getElementById('result').innerText = "Classification failed.";
     }
 }
-
-document.getElementById('upload').addEventListener('change', function(event) {
-    const file = event.target.files[0];
+document.getElementById('upload').addEventListener('change', function (event) {
+    const target = event.target;
+    const file = target.files?.[0];
     if (file) {
         const reader = new FileReader();
-        reader.onload = function(e) {
+        reader.onload = function (e) {
             const img = document.getElementById('inputImage');
             img.src = e.target.result;
             img.style.display = 'block';
-            
             // Wait for the image to load before classifying
-            img.onload = async function() {
+            img.onload = async function () {
                 document.getElementById('result').innerText = "Classifying...";
                 await classifyImage(img);
-            }
-        }
+            };
+        };
         reader.readAsDataURL(file);
     }
 });
-
-// Initialize the model on page load
 init();
-
 const pets_container = document.getElementById("pets-container");
-
 const patternSelect = document.getElementById("pattern");
 const colorSelect = document.getElementById("color");
 const breedSelect = document.getElementById("breed");
-
 patternSelect.addEventListener("change", filterData);
 colorSelect.addEventListener("change", filterData);
 breedSelect.addEventListener("change", filterData);
-
 function filterData() {
     document.querySelectorAll('.pet').forEach(el => el.remove());
-    
     const selectedPattern = patternSelect.value;
     const selectedColor = colorSelect.value;
     const selectedBreed = breedSelect.value;
-
     const petsFiltArr = pets.filter(pet => {
-    const matchesPattern = selectedPattern === "no pattern specified" || pet.pattern === selectedPattern;
-    const matchesColor = selectedColor === "no color specified" || pet.color.includes(selectedColor);
-    const matchesBreed = selectedBreed === "no_breed" || pet.breed === selectedBreed;
-
-    return matchesPattern && matchesColor && matchesBreed;
-  });
-
-  displayPets(petsFiltArr);
+        const matchesPattern = selectedPattern === "no pattern specified" || pet.pattern === selectedPattern;
+        const matchesColor = selectedColor === "no color specified" || pet.color.includes(selectedColor);
+        const matchesBreed = selectedBreed === "no_breed" || pet.breed === selectedBreed;
+        return matchesPattern && matchesColor && matchesBreed;
+    });
+    displayPets(petsFiltArr);
 }
-
 function createPet(id) {
     let pet = document.createElement("div");
     pet.classList.add("pet");
-    pet.setAttribute('id', id);
+    pet.setAttribute('id', id.toString());
     //pet.style.backgroundImage = "url('pet_pattern.jpg')";
     pet.style.backgroundColor = "rgba(16, 186, 209, 0.6)";
-    pet.style.backgroundSize = "100% auto"; 
+    pet.style.backgroundSize = "100% auto";
     pets_container.appendChild(pet);
 }
-
 function createTextElement(text, id, font_size, font_weight) {
     const p = document.createElement("p");
     p.textContent = text;
     p.style.fontSize = font_size;
-    p.style.fontWeight  = font_weight;
+    p.style.fontWeight = font_weight;
     p.style.lineHeight = "0.1";
-    document.getElementById(id).appendChild(p);
+    document.getElementById(id.toString()).appendChild(p);
 }
-
 function displayPets(petsArr = pets) {
     let div_pet, img;
     petsArr.forEach(pet => {
         createPet(pet.id);
-        div_pet = document.getElementById(pet.id);
+        div_pet = document.getElementById(pet.id.toString());
         img = document.createElement('img');
         img.src = pet.image;
         img.width = 200;
@@ -336,9 +316,9 @@ function displayPets(petsArr = pets) {
         createTextElement(pet.name, pet.id, "20px", "bold");
         createTextElement(pet.breed, pet.id, "20px", "normal");
         createTextElement(pet.pattern + " " + pet.color.join(" "), pet.id, "20px", "normal");
-        createTextElement(pet.owner, pet.id, "16px", "normal");     });
+        createTextElement(pet.owner, pet.id, "16px", "normal");
+    });
 }
-
 window.onload = async (e) => {
     try {
         e.preventDefault();
@@ -346,18 +326,17 @@ window.onload = async (e) => {
             "Content-Type": "application/json",
             "x-api-key": "live_zLAE9dSElFBdN4qmC0wh8w56zbTwxOpN0eCvMn95xbSF8dfmiWFYXLz0TyZkV1s8"
         });
-
-        var requestOptions = {
+        let requestOptions = {
             method: 'GET',
             headers: headers,
             redirect: 'follow'
         };
-
         let catsUrl = 'https://api.thecatapi.com/v1/breeds';
         const response = await fetch(catsUrl, requestOptions);
         if (!response.ok) {
             throw new Error("Something went wrong");
-        } else {
+        }
+        else {
             let div_pet, img;
             let pets = await response.json();
             const select = document.getElementById('breed');
@@ -367,18 +346,17 @@ window.onload = async (e) => {
                 opt.textContent = pet.name;
                 select.appendChild(opt);
             }
-                const opt = document.createElement('option');
-                opt.value = 'no_breed';
-                opt.textContent = 'no breed specified';
-                opt.defaultSelected = true;
-                select.appendChild(opt);
-
+            const opt = document.createElement('option');
+            opt.value = 'no_breed';
+            opt.textContent = 'no breed specified';
+            opt.defaultSelected = true;
+            select.appendChild(opt);
         }
-    } catch (err) {
+    }
+    catch (err) {
         console.log("In the catch ", err);
     }
-}
-
+};
 function displayOptionsFilt() {
     const select_pattern = document.getElementById('pattern');
     for (const pattern of patterns) {
@@ -386,7 +364,6 @@ function displayOptionsFilt() {
         opt.textContent = pattern;
         select_pattern.appendChild(opt);
     }
-    
     const select_color = document.getElementById('color');
     for (const color of colors) {
         const opt = document.createElement('option');
@@ -394,6 +371,6 @@ function displayOptionsFilt() {
         select_color.appendChild(opt);
     }
 }
-
 displayOptionsFilt();
 displayPets(pets);
+//# sourceMappingURL=script.js.map

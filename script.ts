@@ -1,4 +1,6 @@
-import ml5 from 'ml5';
+//import ml5 from 'ml5';
+// Replace: import express from 'express';
+const ml5 = require('ml5');
 
 // Define explicit interfaces for your model's output
 interface ClassificationResult {
@@ -245,8 +247,8 @@ async function classifyImage(imageElement : HTMLImageElement) {
     try {
         const results: ClassificationResult[] = await classifier.classify(imageElement);
         
-        const label: string = results[0].label;
-        const confidence: string = (results[0].confidence * 100).toFixed(2);
+        const label: string = (results[0] as { label: string }).label;
+        const confidence: string = ((results[0] as { confidence: number }).confidence * 100).toFixed(2);
         (document.getElementById('result' as string) as HTMLElement).innerText = 
             `Prediction: ${label} (${confidence}% confidence)`;
         
