@@ -10,7 +10,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     background-color: #f5cee57a;
-    background-image: url('pexels-thom-gonzalez-3126166-12786869.jpg'), url('pexels-serhii-iziurov-427071184-15225705.jpg');
+    background-image: url('img/pexels-thom-gonzalez-3126166-12786869.jpg'), url('img/pexels-serhii-iziurov-427071184-15225705.jpg');
     background-position: left top, right bottom;
     background-size: 250px auto, 250px auto;
     background-repeat: no-repeat, no-repeat;

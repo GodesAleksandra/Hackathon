@@ -22,7 +22,7 @@ const pets: {
         breed: 'Scottish Fold',
         pattern: 'tabby',
         color: ['white','brown (chocolate)'],
-        image: 'pexels-yudha-cuglad-938325-32421280.jpg'
+        image: 'img/pexels-yudha-cuglad-938325-32421280.jpg'
     },
     {
         id: 2,
@@ -31,7 +31,7 @@ const pets: {
         breed: 'Maine Coon',
         pattern: 'tabby',
         color: ['blue (grey)','cream'],
-        image: 'pexels-3096301-5780939.jpg'
+        image: 'img/pexels-3096301-5780939.jpg'
     },
     {
         id: 3,
@@ -40,7 +40,7 @@ const pets: {
         breed: 'Siamese',
         pattern: 'colorpoint',
         color: ['seal'],
-        image: 'pexels-3885630-5780662.jpg'
+        image: 'img/pexels-3885630-5780662.jpg'
     },
     {
         id: 4,
@@ -49,7 +49,7 @@ const pets: {
         breed: 'Burmese',
         pattern: 'solid',
         color: ['black'],
-        image: 'pexels-140938577-10347798.jpg'
+        image: 'img/pexels-140938577-10347798.jpg'
     },
     {
         id: 5,
@@ -58,7 +58,7 @@ const pets: {
         breed: 'Ragdoll',
         pattern: 'calico',
         color: ['white','brown (chocolate)'],
-        image: 'pexels-724211268-34479025.jpg'
+        image: 'img/pexels-724211268-34479025.jpg'
     },
     {
         id: 6,
@@ -67,7 +67,7 @@ const pets: {
         breed: 'Persian',
         pattern: 'tabby',
         color: ['orange (red)'],
-        image: 'pexels-abi-ikhwanurridlo-3385258-5380197.jpg'
+        image: 'img/pexels-abi-ikhwanurridlo-3385258-5380197.jpg'
     },
     {
         id: 7,
@@ -76,7 +76,7 @@ const pets: {
         breed: 'Siamese',
         pattern: 'mink',
         color: ['seal'],
-        image: 'pexels-anilkarakaya-14017008.jpg'
+        image: 'img/pexels-anilkarakaya-14017008.jpg'
     },
     {
         id: 8,
@@ -85,7 +85,7 @@ const pets: {
         breed: 'Devon Rex',
         pattern: 'solid',
         color: ['cream'],
-        image: 'pexels-chen-edison-2155188199-37390945.jpg'
+        image: 'img/pexels-chen-edison-2155188199-37390945.jpg'
     },
     {
         id: 9,
@@ -94,7 +94,7 @@ const pets: {
         breed: 'Persian',
         pattern: 'chinchilla',
         color: ['white'],
-        image:'pexels-claudia-schmalz-3928374-14803378.jpg'
+        image:'img/pexels-claudia-schmalz-3928374-14803378.jpg'
     },
     {
         id: 10,
@@ -103,7 +103,7 @@ const pets: {
         breed: 'Siamese',
         pattern: 'colorpoint',
         color: ['seal'],
-        image:'pexels-dagmara-dombrovska-22732579-7696348.jpg'
+        image:'img/pexels-dagmara-dombrovska-22732579-7696348.jpg'
     },
     {
         id: 11,
@@ -112,7 +112,7 @@ const pets: {
         breed: 'No breed specified',
         pattern: 'tabby',
         color: ['brown (chocolate)'],
-        image:'pexels-fox-58267-37385907.jpg'
+        image:'img/pexels-fox-58267-37385907.jpg'
     },
     {
         id: 12,
@@ -121,7 +121,7 @@ const pets: {
         breed: 'Bengal',
         pattern: 'tabby',
         color: ['silver'],
-        image:'pexels-helen1-20211114.jpg'
+        image:'img/pexels-helen1-20211114.jpg'
     },
     {
         id: 13,
@@ -130,7 +130,7 @@ const pets: {
         breed: 'Bengal',
         pattern: 'tabby',
         color: ['brown (chocolate)'],
-        image:'pexels-jerry-2334361-16761418.jpg'
+        image:'img/pexels-jerry-2334361-16761418.jpg'
     },
     {
         id: 14,
@@ -139,7 +139,7 @@ const pets: {
         breed: 'Sphynx',
         pattern: 'solid',
         color: ['blue (grey)'],
-        image:'pexels-koolshooters-7680670.jpg'
+        image:'img/pexels-koolshooters-7680670.jpg'
     },
     {
         id: 15,
@@ -148,7 +148,7 @@ const pets: {
         breed: 'Sphynx',
         pattern: 'solid',
         color: ['blue (grey)'],
-        image:'pexels-koolshooters-7680672.jpg'
+        image:'img/pexels-koolshooters-7680672.jpg'
     },
     {
         id: 16,
@@ -157,7 +157,7 @@ const pets: {
         breed: 'Himalayan',
         pattern: 'colorpoint',
         color: ['seal'],
-        image:'pexels-leonardo-de-oliveira-872270-2499282.jpg'
+        image:'img/pexels-leonardo-de-oliveira-872270-2499282.jpg'
     },
     {
         id: 17,
@@ -166,7 +166,7 @@ const pets: {
         breed: 'Siamese',
         pattern: 'colorpoint',
         color: ['seal'],
-        image:'pexels-natalia-sevruk-636238602-33202410.jpg'
+        image:'img/pexels-natalia-sevruk-636238602-33202410.jpg'
     },
     {
         id: 18,
@@ -175,7 +175,7 @@ const pets: {
         breed: 'Persian',
         pattern: 'tuxedo',
         color: ['orange (red)', 'white'],
-        image:'pexels-nicohonasan-37671114.jpg'
+        image:'img/pexels-nicohonasan-37671114.jpg'
     },
     {
         id: 19,
@@ -184,7 +184,7 @@ const pets: {
         breed: 'Bengal',
         pattern: 'tabby',
         color: ['brown (chocolate)'],
-        image:'pexels-nika-benedictova-24565203-15802496.jpg'
+        image:'img/pexels-nika-benedictova-24565203-15802496.jpg'
     },
     {
         id: 20,
@@ -193,7 +193,7 @@ const pets: {
         breed: 'Scottish Fold',
         pattern: 'tabby',
         color: ['blue (grey)'],
-        image:'pexels-pet-foto-644780685-17685206.jpg'
+        image:'img/pexels-pet-foto-644780685-17685206.jpg'
     },
     {
         id: 21,
@@ -202,7 +202,7 @@ const pets: {
         breed: 'Sphynx',
         pattern: 'colorpoint',
         color: ['seal'],
-        image:'pexels-pexels-user-399617868-17191487.jpg'
+        image:'img/pexels-pexels-user-399617868-17191487.jpg'
     },
     {
         id: 22,
@@ -211,7 +211,7 @@ const pets: {
         breed: 'Ragdoll',
         pattern: 'calico',
         color: ['white','brown (chocolate)'],
-        image:'pexels-rain-lu-452606747-29903738.jpg'
+        image:'img/pexels-rain-lu-452606747-29903738.jpg'
     },
     {
         id: 23,
@@ -220,7 +220,7 @@ const pets: {
         breed: 'Persian',
         pattern: 'cap-and-saddle',
         color: ['white'],
-        image:'pexels-shootsaga-30689866.jpg'
+        image:'img/pexels-shootsaga-30689866.jpg'
     },
     {
         id: 24,
@@ -229,7 +229,7 @@ const pets: {
         breed: 'Scottish Fold',
         pattern: 'smoke',
         color: ['blue (grey)'],
-        image:'pexels-sofie-witters-248577-16579458.jpg'
+        image:'img/pexels-sofie-witters-248577-16579458.jpg'
     }
 ];
 
