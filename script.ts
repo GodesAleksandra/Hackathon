@@ -5,7 +5,7 @@ const pets = [
         owner: 'Yudha Cuglad',
         breed: 'Scottish Fold',
         pattern: 'tabby',
-        color: '',
+        color: ['white','brown (chocolate)'],
         image: 'pexels-yudha-cuglad-938325-32421280.jpg'
     },
     {
@@ -14,7 +14,7 @@ const pets = [
         owner: 'Sergey Syomin',
         breed: 'Maine Coon',
         pattern: 'tabby',
-        color: '',
+        color: ['blue (grey)','cream'],
         image: 'pexels-3096301-5780939.jpg'
     },
     {
@@ -23,7 +23,7 @@ const pets = [
         owner: 'Anna Kaharchuk',
         breed: 'Siamese',
         pattern: 'colorpoint',
-        color: '',
+        color: ['seal'],
         image: 'pexels-3885630-5780662.jpg'
     },
     {
@@ -32,7 +32,7 @@ const pets = [
         owner: 'Marina Shishkina',
         breed: 'Burmese',
         pattern: 'solid',
-        color: 'black',
+        color: ['black'],
         image: 'pexels-140938577-10347798.jpg'
     },
     {
@@ -41,7 +41,7 @@ const pets = [
         owner: 'Kamren',
         breed: 'Ragdoll',
         pattern: 'calico',
-        color: '',
+        color: ['white','brown (chocolate)'],
         image: 'pexels-724211268-34479025.jpg'
     },
     {
@@ -50,7 +50,7 @@ const pets = [
         owner: 'Leopoldo_Corkery',
         breed: 'Persian',
         pattern: 'tabby',
-        color: 'orange (red)',
+        color: ['orange (red)'],
         image: 'pexels-abi-ikhwanurridlo-3385258-5380197.jpg'
     },
     {
@@ -59,7 +59,7 @@ const pets = [
         owner: 'Elwyn.Skiles',
         breed: 'Siamese',
         pattern: 'mink',
-        color: '',
+        color: ['seal'],
         image: 'pexels-anilkarakaya-14017008.jpg'
     },
     {
@@ -68,7 +68,7 @@ const pets = [
         owner: 'Maxime_Nienow',
         breed: 'Devon Rex',
         pattern: 'solid',
-        color: '',
+        color: ['cream'],
         image: 'pexels-chen-edison-2155188199-37390945.jpg'
     },
     {
@@ -77,7 +77,7 @@ const pets = [
         owner: 'Claudia Schmalz',
         breed: 'Persian',
         pattern: 'chinchilla',
-        color: '',
+        color: ['white'],
         image:'pexels-claudia-schmalz-3928374-14803378.jpg'
     },
     {
@@ -86,7 +86,7 @@ const pets = [
         owner: 'Dagmara Dombrovska',
         breed: 'Siamese',
         pattern: 'colorpoint',
-        color: '',
+        color: ['seal'],
         image:'pexels-dagmara-dombrovska-22732579-7696348.jpg'
     },
     {
@@ -95,7 +95,7 @@ const pets = [
         owner: 'Diana King',
         breed: 'No breed specified',
         pattern: 'tabby',
-        color: '',
+        color: ['brown (chocolate)'],
         image:'pexels-fox-58267-37385907.jpg'
     },
     {
@@ -104,7 +104,7 @@ const pets = [
         owner: 'Helena Jankovicova',
         breed: 'Bengal',
         pattern: 'tabby',
-        color: '',
+        color: ['silver'],
         image:'pexels-helen1-20211114.jpg'
     },
     {
@@ -113,7 +113,7 @@ const pets = [
         owner: 'Jerry',
         breed: 'Bengal',
         pattern: 'tabby',
-        color: 'brown (chocolate)',
+        color: ['brown (chocolate)'],
         image:'pexels-jerry-2334361-16761418.jpg'
     },
     {
@@ -122,7 +122,7 @@ const pets = [
         owner: 'Aleks Kovacevic',
         breed: 'Sphynx',
         pattern: 'solid',
-        color: '',
+        color: ['blue (grey)'],
         image:'pexels-koolshooters-7680670.jpg'
     },
     {
@@ -131,7 +131,7 @@ const pets = [
         owner: 'Nika George',
         breed: 'Sphynx',
         pattern: 'solid',
-        color: '',
+        color: ['blue (grey)'],
         image:'pexels-koolshooters-7680672.jpg'
     },
     {
@@ -140,7 +140,7 @@ const pets = [
         owner: 'leonardo De Oliveira',
         breed: 'Himalayan',
         pattern: 'colorpoint',
-        color: '',
+        color: ['seal'],
         image:'pexels-leonardo-de-oliveira-872270-2499282.jpg'
     },
     {
@@ -149,7 +149,7 @@ const pets = [
         owner: 'Natalia Sevruk',
         breed: 'Siamese',
         pattern: 'colorpoint',
-        color: '',
+        color: ['seal'],
         image:'pexels-natalia-sevruk-636238602-33202410.jpg'
     },
     {
@@ -158,7 +158,7 @@ const pets = [
         owner: 'Nicohonasan',
         breed: 'Persian',
         pattern: 'tuxedo',
-        color: '',
+        color: ['orange (red)', 'white'],
         image:'pexels-nicohonasan-37671114.jpg'
     },
     {
@@ -167,7 +167,7 @@ const pets = [
         owner: 'Nika Benedictova',
         breed: 'Bengal',
         pattern: 'tabby',
-        color: '',
+        color: ['brown (chocolate)'],
         image:'pexels-nika-benedictova-24565203-15802496.jpg'
     },
     {
@@ -176,7 +176,7 @@ const pets = [
         owner: 'Natalya Fox',
         breed: 'Scottish Fold',
         pattern: 'tabby',
-        color: 'Blue (Grey)',
+        color: ['blue (grey)'],
         image:'pexels-pet-foto-644780685-17685206.jpg'
     },
     {
@@ -185,7 +185,7 @@ const pets = [
         owner: 'John Stanton',
         breed: 'Sphynx',
         pattern: 'colorpoint',
-        color: '',
+        color: ['seal'],
         image:'pexels-pexels-user-399617868-17191487.jpg'
     },
     {
@@ -194,7 +194,7 @@ const pets = [
         owner: 'Rain Lu',
         breed: 'Ragdoll',
         pattern: 'calico',
-        color: '',
+        color: ['white','brown (chocolate)'],
         image:'pexels-rain-lu-452606747-29903738.jpg'
     },
     {
@@ -203,7 +203,7 @@ const pets = [
         owner: 'Anna Black',
         breed: 'Persian',
         pattern: 'cap-and-saddle',
-        color: '',
+        color: ['white'],
         image:'pexels-shootsaga-30689866.jpg'
     },
     {
@@ -212,7 +212,7 @@ const pets = [
         owner: 'Sofie Witters',
         breed: 'Scottish Fold',
         pattern: 'smoke',
-        color: 'blue (grey)',
+        color: ['blue (grey)'],
         image:'pexels-sofie-witters-248577-16579458.jpg'
     }
 ];
@@ -237,6 +237,17 @@ async function classifyImage(imageElement) {
         const confidence = (results[0].confidence * 100).toFixed(2);
         document.getElementById('result').innerText = 
             `Prediction: ${label} (${confidence}% confidence)`;
+        
+        document.querySelectorAll('.pet').forEach(el => el.remove());    
+    
+        const petsFiltArr = pets.filter(pet => {
+            const filtLabel = label.toLowerCase().replace('cat','').replaceAll(' ', '').split(',');
+            const matchesPrediction = filtLabel.includes(pet.breed.toLowerCase()) || filtLabel.includes(pet.pattern.toLowerCase());
+            
+            return matchesPrediction;
+        });
+
+        displayPets(petsFiltArr);
     } catch (error) {
         console.error(error);
         document.getElementById('result').innerText = "Classification failed.";
@@ -284,7 +295,7 @@ function filterData() {
 
     const petsFiltArr = pets.filter(pet => {
     const matchesPattern = selectedPattern === "no pattern specified" || pet.pattern === selectedPattern;
-    const matchesColor = selectedColor === "no color specified" || pet.color === selectedColor;
+    const matchesColor = selectedColor === "no color specified" || pet.color.includes(selectedColor);
     const matchesBreed = selectedBreed === "no_breed" || pet.breed === selectedBreed;
 
     return matchesPattern && matchesColor && matchesBreed;
@@ -324,7 +335,7 @@ function displayPets(petsArr = pets) {
         div_pet.appendChild(img);
         createTextElement(pet.name, pet.id, "20px", "bold");
         createTextElement(pet.breed, pet.id, "20px", "normal");
-        createTextElement(pet.pattern + " " + pet.color, pet.id, "20px", "normal");
+        createTextElement(pet.pattern + " " + pet.color.join(" "), pet.id, "20px", "normal");
         createTextElement(pet.owner, pet.id, "16px", "normal");     });
 }
 
@@ -358,7 +369,7 @@ window.onload = async (e) => {
             }
                 const opt = document.createElement('option');
                 opt.value = 'no_breed';
-                opt.textContent = 'No breed specified';
+                opt.textContent = 'no breed specified';
                 opt.defaultSelected = true;
                 select.appendChild(opt);
 
